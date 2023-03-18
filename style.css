@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  box-sizing: border-box;
+  place-content: center;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  display: flex;
+  max-width: 40em;
+  border-radius: 25px;
+  box-shadow: 10px 10px 20px rgba(216, 216, 216, 0.357);
+  overflow: hidden;
+}
+
+.left,
+.right {
+  flex: 1;
+  padding:  1.5rem 3rem;
+}
+
+.left * {
+  text-align: center;
+}
+
+.left {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border-radius: 25px;
+  position: relative;
+  color: hsl(0, 1%, 81%);
+}
+
+.my-score {
+  height: 200px;
+  width: 200px;
+  font-weight: 800;
+  font-size: 4em;
+  margin: auto;
+  margin-top: 30px;
+  background-image: linear-gradient(
+    to top,
+    hsla(241, 72%, 46%, 0),
+    hsla(256, 72%, 46%, 1)
+  );
+  color: hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+/* to align vertically and horizontally
+    using flexbox */
+.my-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.max-score {
+  position: relative;
+  bottom: 65px;
+  opacity: 0.6;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.right > * {
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+}
+.right > * > img {
+    padding-right: 10px;
+}
+.score {
+  position: absolute;
+  right: 20px;
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+
+.score--max-score {
+  color: hsl(0, 0%, 56%);
+}
+
+.result-heading {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+  }
+
+.summary-heading {
+  font-size: 1.5rem;
+}
+.reaction-score {
+  color: hsl(0, 100%, 67%);
+  background-color: #fff6f5;
+}
+
+.memory-score {
+  color: hsl(39, 100%, 56%);
+  background-color: #fffbf0;
+}
+
+.verbal-score {
+  color: hsl(166, 100%, 37%);
+  background-color: #f1fbfa;
+}
+
+.visual-score {
+  color: hsl(234, 85%, 45%);
+  background-color: hsl(221, 100%, 96%);
+}
+
+.button {
+  height: 3em;
+  /* margin: 15px 0; */
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 50px;
+  font-size: 1em;
+  font-weight: 800;
+  justify-content: center;
+}
+
+
+.compliment {
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 20px;
+    font-weight: 800;
+}
