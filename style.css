@@ -28,9 +28,13 @@ img {
   max-width: 40em;
   border-radius: 25px;
   box-shadow: 10px 10px 20px rgba(216, 216, 216, 0.357);
-  overflow: hidden;
-}
 
+}
+@media (max-width: 50em) {
+  .container {
+    flex-direction: column;
+  }
+}
 .left,
 .right {
   flex: 1;
